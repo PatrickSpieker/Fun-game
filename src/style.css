@@ -11,6 +11,8 @@ body {
   min-height: 100vh;
   background-color: #1a1a1a;
   font-family: system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+  touch-action: none;
 }
 
 #app {
@@ -25,4 +27,7 @@ body {
   border-radius: 8px;
   background-color: #87ceeb;
   cursor: pointer;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
 }

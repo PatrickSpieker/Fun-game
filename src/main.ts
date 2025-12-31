@@ -267,6 +267,12 @@ function handleInput() {
 
 canvas.addEventListener('click', handleInput)
 
+// Touch support for mobile
+canvas.addEventListener('touchstart', (e) => {
+  e.preventDefault() // Prevent scrolling
+  handleInput()
+})
+
 document.addEventListener('keydown', (e) => {
   if (e.code === 'Space') {
     e.preventDefault()
